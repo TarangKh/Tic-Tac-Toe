@@ -1,0 +1,183 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E8EAB0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+#heading {
+    margin-top: 8vh;
+    font-size: 10vh;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#35877d;
+}
+.box {
+    background-color: #C0FDFB;
+    width: 18vh;
+    height: 18vh;
+    border: 2px solid #35877d;
+    padding-left: 0px;
+    color: #D24333;
+    font-weight: 500;
+    font-size: 3rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4) ;
+}
+.game {
+    padding-top: 5vh;
+    /* display: flex;
+    flex-direction: column;
+    position: relative; */
+}
+
+.row {
+    font-size: 0px;
+    display: flex;
+}
+
+.reset {
+    align-self: center;
+    margin-top: 1rem;
+}
+
+#reset-button {
+    width: 20vh;
+    height: 5vh;
+    border: 1px solid #35877d;
+    background-color: #35877d;
+    color: white;
+    font-weight: bold;
+}
+
+#reset-button:hover {
+    border: 2px solid black;
+    
+}
+    
+.p {
+    margin-top: 1rem;
+    text-align: center;
+    color: #D24333;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 0px;
+}
+#winner {
+    font-size: 2rem;
+    visibility: hidden;
+}
+
+@media (max-width: 500px) {
+    #heading {
+        margin-top: 6vh;
+        font-size: 5vh;
+    }
+    .box {
+       
+        width: 10vh;
+        height: 10vh;
+        font-size: 1.8rem;
+    }
+    .game {
+        padding-top: 8vh;
+    }
+    .reset {
+        align-self: center;
+        margin-top: 6rem;
+    }
+    #reset-button {
+        width: 13vh;
+        height: 5vh;
+    }
+    #reset-button:active {
+        border: 2px solid black;
+        
+    }
+    #reset-button:hover {
+        border: none;
+        
+    }
+
+}
+
+
+@media (min-width: 800px) and (max-width: 1000px) and (min-height:1000px){
+    #heading  {
+        margin-top: 7vh;
+        font-size: 8vh;
+    }
+    .box {
+        width: 14vh;
+        height: 14vh;
+        font-size: 2.5rem;
+    }
+    .game {
+        padding-top: 8vh;
+    }
+    .reset {
+        align-self: center;
+        margin-top: 6rem;
+    }
+    #reset-button {
+        width: 13vh;
+        height: 5vh;
+        font-size: 1rem;
+    }
+    #reset-button:active {
+        border: 2px solid black;
+        
+    }
+    #reset-button:hover {
+        border: none;
+        
+    }
+
+} 
+
+@media (max-height: 500px) {
+    /* #heading {
+        margin-top: 6vh;
+        font-size: 5vh;
+    } */
+    .box {
+       
+        /* width: 10vh;
+        height: 10vh; */
+        font-size: 1.4rem;
+    }
+    .game {
+        padding-top: 8vh;
+        /* padding-bottom: 8vh; */
+    }
+    .reset {
+        align-self: center;
+        /* margin-top: 2rem; */
+    }
+    #reset-button {
+        width: 25vh;
+        height: 10vh;
+        font-size: 0.8rem;
+    
+    }
+    #reset-button:active {
+        border: 2px solid black;
+        
+    }
+    .content {
+        margin-bottom: 8vh;
+    }
+
+    #reset-button:hover {
+        border: none;
+        
+    }
+}
